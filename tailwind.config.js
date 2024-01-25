@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+
+/** Wrapper constant for Material Tailwind components */
+
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#092635",
+        secondary: "#1B4242",
+        background: "#9EC8B9",
+      },
+    },
   },
-  plugins: [],
-};
+});
