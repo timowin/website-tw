@@ -1,20 +1,20 @@
+import { Component } from "react";
+import { ExperienceTypeEnum, MonthEnum } from "../Enums";
+import ImageWithLocation from "./ImageWithLocation";
 import {
-  MapPinIcon,
   BriefcaseIcon,
   CheckBadgeIcon,
   AcademicCapIcon,
 } from "@heroicons/react/24/outline";
-import { Component } from "react";
-import { ExperienceType, Month } from "../Enums";
-import ImageWithLocation from "./ImageWithLocation";
+import DatePeriod from "./DatePeriod";
 
 // Defines all properties
 type Props = {
   image: string;
-  experience_type: ExperienceType;
-  start_month: Month | null;
+  experience_type: ExperienceTypeEnum;
+  start_month: MonthEnum | null;
   start_year: number | null;
-  end_month?: Month | null;
+  end_month?: MonthEnum | null;
   end_year?: number | null;
   date?: string | null;
   title: string;
@@ -23,38 +23,14 @@ type Props = {
 };
 
 export default class ExperienceCard extends Component<Props> {
-  renderDate() {
-    if (this.props.date) {
-      return this.props.date;
-    }
-    if (
-      this.props.start_month &&
-      this.props.start_year &&
-      this.props.end_month &&
-      this.props.end_year
-    ) {
-      return (
-        this.props.start_month +
-        " " +
-        this.props.start_year +
-        " - " +
-        this.props.end_month +
-        " " +
-        this.props.end_year
-      );
-    }
-    if (this.props.start_month && this.props.start_year)
-      return this.props.start_month + " " + this.props.start_year + " - Today";
-  }
-
   renderExperienceTypeIcon() {
-    if (this.props.experience_type === ExperienceType.WORK) {
+    if (this.props.experience_type === ExperienceTypeEnum.WORK) {
       return <BriefcaseIcon className="h-6" />;
     }
-    if (this.props.experience_type === ExperienceType.EDUCATION) {
+    if (this.props.experience_type === ExperienceTypeEnum.EDUCATION) {
       return <AcademicCapIcon className="h-6" />;
     }
-    if (this.props.experience_type === ExperienceType.CERTIFICATE) {
+    if (this.props.experience_type === ExperienceTypeEnum.CERTIFICATE) {
       return <CheckBadgeIcon className="h-6" />;
     }
   }
@@ -69,9 +45,12 @@ export default class ExperienceCard extends Component<Props> {
                 {this.props.title}
               </span>
 
-              <span className="text-gray-600 text-sm group-hover:text-secondary">
-                {this.renderDate()}
-              </span>
+              <DatePeriod
+                start_month={this.props.start_month}
+                start_year={this.props.start_year}
+                end_month={this.props.end_month}
+                end_year={this.props.end_year}
+              />
             </div>
           </div>
 
