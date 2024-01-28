@@ -1,0 +1,23 @@
+enum BadgeColors {
+  "azure",
+  "cerulean",
+  "periwinkle",
+  "magenta",
+  "chartreuse",
+  "vermilion",
+  "aquamarine",
+  "indigo",
+  "cyan",
+  "mauve",
+  "teal",
+  "marigold",
+  "lavender",
+  "turquoise",
+  "coral",
+  "amber",
+  "crimson",
+  "olive",
+  "sapphire",
+  "violet",
+}
+export default BadgeColors;
