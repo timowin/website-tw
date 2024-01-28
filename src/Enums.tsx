@@ -1,4 +1,4 @@
-import ExperienceType from "./enums/ExperienceType";
-import Month from "./enums/Month";
-import BadgeColors from "./enums/BadgeColors";
-export { ExperienceType, Month, BadgeColors };
+import ExperienceTypeEnum from "./enums/ExperienceTypeEnum";
+import MonthEnum from "./enums/MonthEnum";
+import TechnologyTypeEnum from "./enums/TechnologyTypeEnum";
+export { ExperienceTypeEnum, MonthEnum, TechnologyTypeEnum };
