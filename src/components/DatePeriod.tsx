@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { MonthEnum } from "../Enums";
+import { capitalizeToLowercase } from "../helperFunctions/stringManipulation";
 
 type Props = {
   start_month: MonthEnum | null;
@@ -7,10 +8,6 @@ type Props = {
   end_month?: MonthEnum | null;
   end_year?: number | null;
   date?: string | null;
-};
-
-const toCapitalizedLowercase = (str: string): string => {
-  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 };
 
 export default class DatePeriod extends Component<Props> {
@@ -25,18 +22,18 @@ export default class DatePeriod extends Component<Props> {
       this.props.end_year
     ) {
       return (
-        toCapitalizedLowercase(MonthEnum[this.props.start_month]) +
+        capitalizeToLowercase(MonthEnum[this.props.start_month]) +
         " " +
         this.props.start_year +
         " - " +
-        toCapitalizedLowercase(MonthEnum[this.props.end_month]) +
+        capitalizeToLowercase(MonthEnum[this.props.end_month]) +
         " " +
         this.props.end_year
       );
     }
     if (this.props.start_month && this.props.start_year)
       return (
-        toCapitalizedLowercase(MonthEnum[this.props.start_month]) +
+        capitalizeToLowercase(MonthEnum[this.props.start_month]) +
         " " +
         this.props.start_year +
         " - Today"
