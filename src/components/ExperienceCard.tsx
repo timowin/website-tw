@@ -12,8 +12,8 @@ import DatePeriod from "./DatePeriod";
 type Props = {
   image: string;
   experience_type: ExperienceTypeEnum;
-  start_month: MonthEnum | null;
-  start_year: number | null;
+  start_month: MonthEnum;
+  start_year: number;
   end_month?: MonthEnum | null;
   end_year?: number | null;
   date?: string | null;
@@ -44,12 +44,12 @@ export default class ExperienceCard extends Component<Props> {
               <span className="font-black uppercase text-xl text-secondary duration-300">
                 {this.props.title}
               </span>
-
               <DatePeriod
                 start_month={this.props.start_month}
                 start_year={this.props.start_year}
                 end_month={this.props.end_month}
                 end_year={this.props.end_year}
+                date={this.props.date}
               />
             </div>
           </div>
