@@ -20,6 +20,8 @@ type Props = {
   title: string;
   type: string;
   location: string;
+  description: string | null;
+  tasks: [string] | null;
 };
 
 export default class ExperienceCard extends Component<Props> {
@@ -33,6 +35,24 @@ export default class ExperienceCard extends Component<Props> {
     if (this.props.experience_type === ExperienceTypeEnum.CERTIFICATE) {
       return <CheckBadgeIcon className="h-6" />;
     }
+  }
+
+  renderTasks() {
+    // If no tasks are defined, return nothing
+    if (!this.props.tasks) {
+      return undefined;
+    }
+    // else if tasks are defined, return an unordered list with all tasks
+    return (
+      <div>
+        {"Tasks and responsibilites:"}
+        <ul className="pl-6 list-disc ">
+          {this.props.tasks.map((task) => (
+            <li>{task}</li>
+          ))}
+        </ul>
+      </div>
+    );
   }
 
   render() {
@@ -53,14 +73,10 @@ export default class ExperienceCard extends Component<Props> {
               />
             </div>
           </div>
-
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            eaque doloribus, consectetur quas error voluptates officia id quis
-            nemo officiis nisi molestias eos dicta consequatur quibusdam sunt
-            voluptatum illum eveniet!
+          <div className="flex flex-col gap-2">
+            {this.props.description}
+            {this.renderTasks()}
           </div>
-
           <div className="flex items-end">
             <div className="relative flex flex-row gap-2 select-none items-center whitespace-nowrap rounded-lg group-hover:bg-gradient-to-r group-hover:from-blue800 group-hover:to-blue-900 bg-blue-900 py-1.5 px-3 font-sans text-xs font-bold uppercase text-white">
               <span className="">{this.props.type}</span>

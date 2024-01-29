@@ -47,6 +47,12 @@ function App() {
                   title={experience.title}
                   type={experience.type}
                   location={experience.location}
+                  description={experience.description}
+                  tasks={
+                    (experience.tasks || []).length > 0
+                      ? experience.tasks.map((task) => [task])
+                      : undefined
+                  }
                 />
               ))}
             </div>
