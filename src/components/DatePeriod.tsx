@@ -18,14 +18,20 @@ export default class DatePeriod extends Component<Props> {
     }
 
     // check if start_month and start_year is given
-    if (this.props.start_month && this.props.start_year) {
+    if (
+      (this.props.start_month || this.props.start_month === 0) &&
+      this.props.start_year
+    ) {
       const startDate =
         capitalizeToLowercase(MonthEnum[this.props.start_month]) +
         " " +
         this.props.start_year;
 
       // if start_date is given, check if end_month and end_year is given
-      if (this.props.end_month && this.props.end_year) {
+      if (
+        (this.props.end_month || this.props.end_month === 0) &&
+        this.props.end_year
+      ) {
         var endDate =
           capitalizeToLowercase(MonthEnum[this.props.end_month]) +
           " " +
