@@ -3,8 +3,8 @@ import { MonthEnum } from "../Enums";
 import { capitalizeToLowercase } from "../helperFunctions/stringManipulation";
 
 type Props = {
-  start_month: MonthEnum | null;
-  start_year: number | null;
+  start_month: MonthEnum;
+  start_year: number;
   end_month?: MonthEnum | null;
   end_year?: number | null;
   date?: string | null;
@@ -14,30 +14,27 @@ export default class DatePeriod extends Component<Props> {
   getDateString() {
     if (this.props.date) {
       return this.props.date;
-    }
-    if (
-      this.props.start_month &&
-      this.props.start_year &&
-      this.props.end_month &&
-      this.props.end_year
-    ) {
-      return (
+    } else {
+      const startDate =
         capitalizeToLowercase(MonthEnum[this.props.start_month]) +
         " " +
-        this.props.start_year +
-        " - " +
-        capitalizeToLowercase(MonthEnum[this.props.end_month]) +
-        " " +
-        this.props.end_year
-      );
+        this.props.start_year;
+
+      if (
+        this.props.end_month !== null &&
+        this.props.end_month !== undefined &&
+        this.props.end_year !== null &&
+        this.props.end_year !== undefined
+      ) {
+        var endDate =
+          capitalizeToLowercase(MonthEnum[this.props.end_month]) +
+          " " +
+          this.props.end_year;
+      } else {
+        var endDate = "Today";
+      }
+      return startDate + " - " + endDate;
     }
-    if (this.props.start_month && this.props.start_year)
-      return (
-        capitalizeToLowercase(MonthEnum[this.props.start_month]) +
-        " " +
-        this.props.start_year +
-        " - Today"
-      );
   }
   render() {
     return (
