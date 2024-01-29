@@ -100,5 +100,21 @@
     "title": "B.Sc. Information Systems",
     "type": "Graduation",
     "location": "Würzburg, Germany"
+  },
+  {
+    "image_name": "bankingKnowledgeCertificate",
+    "experience_type": "CERTIFICATE",
+    "date": "January 19, 2024",
+    "title": "Banking Knowledge Compact",
+    "type": "Certificate",
+    "location": "Frankfurt, Germany"
+  },
+  {
+    "image_name": "interculturalCertificate",
+    "experience_type": "CERTIFICATE",
+    "date": "August 31, 2017",
+    "title": "Intercultural Competence",
+    "type": "Certificate",
+    "location": "Würzburg, Germany"
   }
 ]
