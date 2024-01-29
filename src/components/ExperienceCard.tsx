@@ -10,7 +10,7 @@ import DatePeriod from "./DatePeriod";
 
 // Defines all properties
 type Props = {
-  image: string;
+  image_name: string;
   experience_type: ExperienceTypeEnum;
   start_month: MonthEnum;
   start_year: number;
@@ -71,7 +71,7 @@ export default class ExperienceCard extends Component<Props> {
 
         <div className="basis-1/4 m-auto">
           <ImageWithLocation
-            image={this.props.image}
+            image_name={this.props.image_name}
             location={this.props.location}
           />
         </div>
