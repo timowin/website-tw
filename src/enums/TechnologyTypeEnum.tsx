@@ -1,8 +1,8 @@
 enum TechnologyTypeEnum {
   LANGUAGE,
   FRAMEWORK,
-  TOOL,
   DATABASE,
+  TOOL,
   MISC,
 }
 export default TechnologyTypeEnum;
