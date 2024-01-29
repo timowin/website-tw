@@ -1,0 +1,111 @@
+[
+  {
+    "title": "GreenFactory",
+    "short_description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo et numquam eaque delectus quas debitis tenetur, odio ab quibusdam, voluptate eveniet sapiente. Nesciunt, impedit ut voluptate quam deleniti magnam.",
+    "start_month": "JAN",
+    "start_year": 2024,
+    "technologies": [
+      ["Github", "TOOL"],
+      ["Python", "LANGUAGE"]
+    ]
+  },
+  {
+    "title": "Validation as a Service",
+    "short_description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo et numquam eaque delectus quas debitis tenetur, odio ab quibusdam, voluptate eveniet sapiente. Nesciunt, impedit ut voluptate quam deleniti magnam.",
+    "start_month": "SEP",
+    "start_year": 2023,
+    "end_month": "JAN",
+    "end_year": 2024,
+    "technologies": [
+      ["Python", "LANGUAGE"],
+      ["Flask", "FRAMEWORK"],
+      ["Postgresql", "DATABASE"],
+      ["Gitea", "TOOL"],
+      ["Docker", "TOOL"]
+    ]
+  },
+  {
+    "title": "Solar Consultant Tool",
+    "short_description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo et numquam eaque delectus quas debitis tenetur, odio ab quibusdam, voluptate eveniet sapiente. Nesciunt, impedit ut voluptate quam deleniti magnam.",
+    "start_month": "JUN",
+    "start_year": 2023,
+    "technologies": [
+      ["React", "FRAMEWORK"],
+      ["TypeScript", "LANGUAGE"],
+      ["JavaScript", "LANGUAGE"],
+      ["Tailwind", "FRAMEWORK"],
+      ["CSS", "LANGUAGE"],
+      ["GitHub", "TOOL"]
+    ]
+  },
+  {
+    "title": "Masterthesis",
+    "short_description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo et numquam eaque delectus quas debitis tenetur, odio ab quibusdam, voluptate eveniet sapiente. Nesciunt, impedit ut voluptate quam deleniti magnam.",
+    "start_month": "JUL",
+    "start_year": 2022,
+    "end_month": "JAN",
+    "end_year": 2023,
+    "technologies": [
+      ["Python", "LANGUAGE"],
+      ["TeX", "LANGUAGE"],
+      ["Object Recognition", "MISC"],
+      ["Statistic", "MISC"],
+      ["Github", "TOOL"]
+    ]
+  },
+  {
+    "title": "Autonomous Driving Challenge",
+    "short_description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo et numquam eaque delectus quas debitis tenetur, odio ab quibusdam, voluptate eveniet sapiente. Nesciunt, impedit ut voluptate quam deleniti magnam.",
+    "start_month": "OCT",
+    "start_year": 2020,
+    "end_month": "FEB",
+    "end_year": 2021,
+    "technologies": [
+      ["Python", "LANGUAGE"],
+      ["Nvidia Jetbot", "MISC"],
+      ["Pytorch", "FRAMEWORK"],
+      ["Jupyter Notebook", "TOOL"],
+      ["GitHub", "TOOL"]
+    ]
+  },
+  {
+    "title": "Brokerware",
+    "short_description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo et numquam eaque delectus quas debitis tenetur, odio ab quibusdam, voluptate eveniet sapiente. Nesciunt, impedit ut voluptate quam deleniti magnam.",
+    "start_month": "OCT",
+    "start_year": 2020,
+    "end_month": "SEP",
+    "end_year": 2021,
+    "technologies": [
+      ["Ruby on Rails", "LANGUAGE"],
+      ["Postgresql", "DATABASE"],
+      ["Docker", "TOOL"],
+      ["GitLab", "TOOL"]
+    ]
+  },
+  {
+    "title": "SPT-Generator",
+    "short_description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo et numquam eaque delectus quas debitis tenetur, odio ab quibusdam, voluptate eveniet sapiente. Nesciunt, impedit ut voluptate quam deleniti magnam.",
+    "start_month": "JUL",
+    "start_year": 2019,
+    "end_month": "MAR",
+    "end_year": 2021,
+    "technologies": [
+      ["Python", "LANGUAGE"],
+      ["PyQt", "FRAMEWORK"],
+      ["PDF Generation", "MISC"]
+    ]
+  },
+  {
+    "title": "Bachelorthesis",
+    "short_description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus illo et numquam eaque delectus quas debitis tenetur, odio ab quibusdam, voluptate eveniet sapiente. Nesciunt, impedit ut voluptate quam deleniti magnam.",
+    "start_month": "NOV",
+    "start_year": 2018,
+    "end_month": "MAR",
+    "end_year": 2019,
+    "technologies": [
+      ["Python", "LANGUAGE"],
+      ["MongoDB", "DATABASE"],
+      ["PDF Generation", "MISC"]
+    ]
+  }
+]
