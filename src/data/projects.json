@@ -104,8 +104,7 @@
     "end_year": 2019,
     "technologies": [
       ["Python", "LANGUAGE"],
-      ["MongoDB", "DATABASE"],
-      ["PDF Generation", "MISC"]
+      ["MongoDB", "DATABASE"]
     ]
   }
 ]
