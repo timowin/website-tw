@@ -1,6 +1,8 @@
-import { MonthEnum, TechnologyTypeEnum } from "../Enums";
+import { ExperienceTypeEnum, MonthEnum, TechnologyTypeEnum } from "../Enums";
 
-function parseMonth(monthString: string): MonthEnum | undefined {
+function parseMonthEnum(
+  monthString: string | undefined
+): MonthEnum | undefined {
   if (!monthString) {
     return undefined;
   }
@@ -33,14 +35,11 @@ function parseMonth(monthString: string): MonthEnum | undefined {
       return undefined;
   }
 }
-export { parseMonth };
+export { parseMonthEnum };
 
-function parseTechnology(
+function parseTechnologyTypeEnum(
   technologyTypeString: string
-): TechnologyTypeEnum | undefined {
-  if (!technologyTypeString) {
-    return undefined;
-  }
+): TechnologyTypeEnum {
   switch (technologyTypeString.toUpperCase()) {
     case "LANGUAGE":
       return TechnologyTypeEnum.LANGUAGE;
@@ -49,9 +48,30 @@ function parseTechnology(
     case "DATABASE":
       return TechnologyTypeEnum.DATABASE;
     case "TOOL":
+      return TechnologyTypeEnum.TOOL;
+    case "MISC":
       return TechnologyTypeEnum.MISC;
     default:
       return TechnologyTypeEnum.MISC;
   }
 }
-export { parseTechnology };
+export { parseTechnologyTypeEnum };
+
+function parseExperienceTypeEnum(
+  experienceTypeString: string | undefined
+): ExperienceTypeEnum | undefined {
+  if (!experienceTypeString) {
+    return undefined;
+  }
+  switch (experienceTypeString.toUpperCase()) {
+    case "WORK":
+      return ExperienceTypeEnum.WORK;
+    case "CERTIFICATE":
+      return ExperienceTypeEnum.CERTIFICATE;
+    case "EDUCATION":
+      return ExperienceTypeEnum.EDUCATION;
+    default:
+      return undefined;
+  }
+}
+export { parseExperienceTypeEnum };

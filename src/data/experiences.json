@@ -15,33 +15,6 @@
     ]
   },
   {
-    "image_name": "awsCloudPractitionerCertificate",
-    "experience_type": "CERTIFICATE",
-    "date": "August 24, 2023",
-    "title": "AWS Cloud Practitioner",
-    "type": "Certificate",
-    "location": "Remote, Germany"
-  },
-  {
-    "image_name": "awsCloudEssentialsCertificate",
-    "experience_type": "CERTIFICATE",
-    "title": "AWS Cloud Essentials",
-    "date": "August 22, 2023",
-    "type": "Certificate",
-    "location": "Remote, Germany"
-  },
-  {
-    "image_name": "thwsLogo",
-    "experience_type": "EDUCATION",
-    "start_month": "OCT",
-    "start_year": 2019,
-    "end_month": "MAR",
-    "end_year": 2023,
-    "title": "M.Sc. Information Systems",
-    "type": "Graduation",
-    "location": "Würzburg, Germany"
-  },
-  {
     "image_name": "porscheLogo",
     "experience_type": "WORK",
     "start_month": "MAY",
@@ -99,7 +72,9 @@
     "end_year": 2019,
     "title": "Data Quality Analyst",
     "type": "Working Student",
-    "location": "Würzburg, Germany"
+    "location": "Würzburg, Germany",
+    "description": "",
+    "tasks": []
   },
   {
     "image_name": "teleAktivLogo",
@@ -110,33 +85,8 @@
     "end_year": 2019,
     "title": "Data Quality Researcher",
     "type": "Bachelorand",
-    "location": "Würzburg, Germany"
-  },
-  {
-    "image_name": "jmuLogo",
-    "experience_type": "EDUCATION",
-    "start_month": "OCT",
-    "start_year": 2014,
-    "end_month": "MAR",
-    "end_year": 2019,
-    "title": "B.Sc. Information Systems",
-    "type": "Graduation",
-    "location": "Würzburg, Germany"
-  },
-  {
-    "image_name": "bankingKnowledgeCertificate",
-    "experience_type": "CERTIFICATE",
-    "date": "January 19, 2024",
-    "title": "Banking Knowledge Compact",
-    "type": "Certificate",
-    "location": "Frankfurt, Germany"
-  },
-  {
-    "image_name": "interculturalCertificate",
-    "experience_type": "CERTIFICATE",
-    "date": "August 31, 2017",
-    "title": "Intercultural Competence",
-    "type": "Certificate",
-    "location": "Würzburg, Germany"
+    "location": "Würzburg, Germany",
+    "description": "",
+    "tasks": []
   }
 ]

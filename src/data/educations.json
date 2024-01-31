@@ -1,0 +1,41 @@
+[
+  {
+    "image_name": "thwsLogo",
+    "experience_type": "EDUCATION",
+    "start_month": "OCT",
+    "start_year": 2019,
+    "end_month": "MAR",
+    "end_year": 2023,
+    "title": "M.Sc. Information Systems",
+    "type": "Graduation",
+    "location": "Würzburg, Germany",
+    "description": "Embarked on an enriching Master's journey at THWS, delving deep into Information Systems, combining theoretical insights with practical training to tackle real-world challenges with confidence.",
+    "tasks": []
+  },
+  {
+    "image_name": "jmuLogo",
+    "experience_type": "EDUCATION",
+    "start_month": "OCT",
+    "start_year": 2014,
+    "end_month": "MAR",
+    "end_year": 2019,
+    "title": "B.Sc. Information Systems",
+    "type": "Graduation",
+    "location": "Würzburg, Germany",
+    "description": "Built a solid foundation in Information Systems during my Bachelor's studies at JMU, laying the groundwork for my academic and professional pursuits in the dynamic field of technology.",
+    "tasks": []
+  },
+  {
+    "image_name": "rgwLogo",
+    "experience_type": "EDUCATION",
+    "start_month": "SEP",
+    "start_year": 2011,
+    "end_month": "JUNE",
+    "end_year": 2014,
+    "title": "High School Diploma",
+    "type": "Graduation",
+    "location": "Würzburg, Germany",
+    "description": "Received a comprehensive education at Röntgen Gymnasium Würzburg, where I cultivated essential skills and knowledge, setting the stage for my academic and professional journey.",
+    "tasks": []
+  }
+]

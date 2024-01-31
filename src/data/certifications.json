@@ -1,0 +1,34 @@
+[
+  {
+    "image_name": "interculturalCertificate",
+    "experience_type": "CERTIFICATE",
+    "date": "Septemper 31, 2017",
+    "title": "Intercultural Competence",
+    "type": "Certificate",
+    "location": "Würzburg, Germany"
+  },
+  {
+    "image_name": "awsCloudPractitionerCertificate",
+    "experience_type": "CERTIFICATE",
+    "date": "August 24, 2023",
+    "title": "AWS Cloud Practitioner",
+    "type": "Certificate",
+    "location": "Online"
+  },
+  {
+    "image_name": "awsCloudEssentialsCertificate",
+    "experience_type": "CERTIFICATE",
+    "title": "AWS Cloud Essentials",
+    "date": "August 22, 2023",
+    "type": "Certificate",
+    "location": "Online"
+  },
+  {
+    "image_name": "bankingKnowledgeCertificate",
+    "experience_type": "CERTIFICATE",
+    "date": "January 19, 2024",
+    "title": "Banking Knowledge Compact",
+    "type": "Certificate",
+    "location": "Frankfurt, Germany"
+  }
+]

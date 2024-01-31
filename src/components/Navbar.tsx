@@ -24,7 +24,7 @@ function NavList() {
           href="#"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          About
+          About me
         </a>
       </Typography>
       <Typography
@@ -91,7 +91,7 @@ export default function NavbarSimple() {
   return (
     <Navbar
       placeholder={placeholder}
-      className="mx-auto max-w-screen-xl px-0 py-4 shadow-none rounded-none"
+      className="mx-auto max-w-screen-lg px-0 py-4 shadow-none rounded-none"
     >
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography

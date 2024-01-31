@@ -6,13 +6,12 @@ import DatePeriod from "./DatePeriod";
 // Defines all properties
 type Props = {
   title: string;
-  start_month: MonthEnum;
-  start_year: number;
-  end_month?: MonthEnum | null;
-  end_year?: number | null;
-  date?: string | null;
-  description: string;
-  technologies?: [[string, TechnologyTypeEnum]] | null;
+  start_month: MonthEnum | undefined;
+  start_year: number | undefined;
+  end_month?: MonthEnum | undefined;
+  end_year?: number | undefined;
+  short_description: string;
+  technologies?: [string, TechnologyTypeEnum][];
 };
 
 export default class ProjectCard extends Component<Props> {
@@ -42,15 +41,9 @@ export default class ProjectCard extends Component<Props> {
               start_year={this.props.start_year}
               end_month={this.props.end_month}
               end_year={this.props.end_year}
-              date={this.props.date}
             />
           </div>
-          <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            illo et numquam eaque delectus quas debitis tenetur, odio ab
-            quibusdam, voluptate eveniet sapiente. Nesciunt, impedit ut
-            voluptate quam deleniti magnam.
-          </div>
+          <div>{this.props.short_description}</div>
           <div className="flex flex-row flex-wrap gap-2">
             {this.renderTechnologies()}
           </div>

@@ -3,8 +3,8 @@ import { MonthEnum } from "../Enums";
 import { capitalizeToLowercase } from "../helperFunctions/stringManipulation";
 
 type Props = {
-  start_month: MonthEnum | null;
-  start_year: number | null;
+  start_month?: MonthEnum | null;
+  start_year?: number | null;
   end_month?: MonthEnum | null;
   end_year?: number | null;
   date?: string | null;

@@ -24,7 +24,7 @@ type Props = {
   tasks: string[][] | undefined;
 };
 
-export default class ExperienceCard extends Component<Props> {
+export default class EducationCard extends Component<Props> {
   renderExperienceTypeIcon() {
     if (this.props.experience_type === ExperienceTypeEnum.WORK) {
       return <BriefcaseIcon className="h-6" />;
@@ -57,7 +57,13 @@ export default class ExperienceCard extends Component<Props> {
 
   render() {
     return (
-      <div className="w-full group bg-white rounded-lg p-4 flex flex-row gap-8 hover:scale-105 duration-300">
+      <div className="w-full shadow-lg group bg-white rounded-lg p-4 flex flex-row gap-8 hover:scale-105 duration-300">
+        <div className="basis-1/4 m-auto">
+          <ImageWithLocation
+            image_name={this.props.image_name}
+            location={this.props.location}
+          />
+        </div>
         <div className="flex flex-col gap-4 content-between basis-3/4">
           <div className="basis-2/3">
             <div className="flex flex-col basis-2/3">
@@ -83,13 +89,6 @@ export default class ExperienceCard extends Component<Props> {
               <div>{this.renderExperienceTypeIcon()}</div>
             </div>
           </div>
-        </div>
-
-        <div className="basis-1/4 m-auto">
-          <ImageWithLocation
-            image_name={this.props.image_name}
-            location={this.props.location}
-          />
         </div>
       </div>
     );
