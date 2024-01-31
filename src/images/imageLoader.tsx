@@ -1,8 +1,10 @@
 const imageObjects = {
+  timoimage: require("./timo_winkler.jpeg"),
   msgLogo: require("./companyLogos/msg-logo.png"),
   porscheLogo: require("./companyLogos/porsche-logo.png"),
   porscheEngineeringLogo: require("./companyLogos/porsche-engineering-logo.jpeg"),
   sophisticatesLogo: require("./companyLogos/sophisiticates-logo.png"),
+  rgwLogo: require("./companyLogos/rgw-logo.png"),
   jmuLogo: require("./companyLogos/jmu-logo.png"),
   thwsLogo: require("./companyLogos/thws-logo.png"),
   teleAktivLogo: require("./companyLogos/teleaktiv-logo.jpeg"),
