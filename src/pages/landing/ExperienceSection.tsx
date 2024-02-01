@@ -8,7 +8,7 @@ import {
 
 const ExperienceSection = () => {
   return (
-    <section className="py-20 sm:rounded-0 md:rounded-lg sm:mx-0 md:mx-6">
+    <section className="bg-primary py-20 sm:rounded-0 md:rounded-lg sm:mx-0 md:mx-6">
       <SectionHeadline title="Experience" textColor="white" />
       <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto">
         {experienceData.map((experience) => (
