@@ -8,7 +8,7 @@ import {
 
 const ProjectSection = () => {
   return (
-    <section className="mx-auto w-4/5">
+    <section className="mx-auto w-4/5 py-20">
       <SectionHeadline title="Projects" textColor="primary" />
       <div className="max-w-screen-lg mx-auto flex flex-col gap-6">
         {projectData.map((project) => (

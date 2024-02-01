@@ -8,9 +8,9 @@ import {
 
 const ExperienceSection = () => {
   return (
-    <section className="bg-primary rounded-lg mx-6">
+    <section className="py-20 sm:rounded-0 md:rounded-lg sm:mx-0 md:mx-6">
       <SectionHeadline title="Experience" textColor="white" />
-      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto pb-20">
+      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto">
         {experienceData.map((experience) => (
           <ExperienceCard
             image_name={experience.image_name}

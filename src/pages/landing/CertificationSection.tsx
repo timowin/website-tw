@@ -4,9 +4,9 @@ import certifications from "../../data/certifications.json";
 
 const CertificationSection = () => {
   return (
-    <section className="bg-primary rounded-lg mx-6">
+    <section className="bg-primary rounded-lg mx-6 py-20">
       <SectionHeadline title="Certifications" textColor="white" />
-      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto pb-20">
+      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto">
         {certifications.map((certificate) => (
           <CertificateCard
             image_name={certificate.image_name}

@@ -8,9 +8,9 @@ import {
 
 const EducationSection = () => {
   return (
-    <section className="mx-auto w-4/5">
+    <section className="mx-auto w-4/5 py-20">
       <SectionHeadline title="Educational Path" textColor="primary" />
-      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto pb-20">
+      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto">
         {educationData.map((education) => (
           <EducationCard
             image_name={education.image_name}
