@@ -73,8 +73,11 @@
     "title": "Data Quality Analyst",
     "type": "Working Student",
     "location": "Würzburg, Germany",
-    "description": "",
-    "tasks": []
+    "description": "As a diligent working student at I played a pivotal role in enhancing data integrity by supporting the migration from a heterogeneous, distributed MS Access-based database to a centralized MongoDB solution. My primary responsibility involved meticulously analyzing and mitigating duplicate data instances, ensuring data accuracy and consistency throughout the transition process while preserving vital information.",
+    "tasks": [
+      "Finding duplicates based on approximative string matching",
+      "Cocept and protoype a softarebased solution for duplicate elimination in Python"
+    ]
   },
   {
     "image_name": "teleAktivLogo",
@@ -86,7 +89,9 @@
     "title": "Data Quality Researcher",
     "type": "Bachelorand",
     "location": "Würzburg, Germany",
-    "description": "",
-    "tasks": []
+    "description": "Undertook an in-depth exploration during my bachelor studies to address the challenges of data quality within TeleAktiv. My research aimed to devise effective strategies to eliminate duplicates without compromising data integrity, providing valuable insights for optimizing data management practices in modern database environments.",
+    "tasks": [
+      "Title of my Bachelorthesis: Comparison of the applicability of different algorithms for approximate string matching in the use case of company address data."
+    ]
   }
 ]

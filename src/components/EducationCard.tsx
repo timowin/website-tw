@@ -45,12 +45,23 @@ export default class EducationCard extends Component<Props> {
     // else if tasks are defined, return an unordered list with all tasks
     return (
       <div>
-        {"Tasks and responsibilites:"}
-        <ul className="pl-6 list-disc ">
-          {this.props.tasks.map((task) => (
-            <li>{task}</li>
-          ))}
-        </ul>
+        {"Subjects included"}
+        <div className="flex flex-row">
+          <ul className="pl-6 list-disc">
+            {this.props.tasks
+              .slice(0, Math.ceil(this.props.tasks.length / 2))
+              .map((task, index) => (
+                <li key={index}>{task}</li>
+              ))}
+          </ul>
+          <ul className="pl-6 list-disc">
+            {this.props.tasks
+              .slice(Math.ceil(this.props.tasks.length / 2))
+              .map((task, index) => (
+                <li key={index}>{task}</li>
+              ))}
+          </ul>
+        </div>
       </div>
     );
   }
