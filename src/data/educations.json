@@ -10,7 +10,18 @@
     "type": "Graduation",
     "location": "Würzburg, Germany",
     "description": "Embarked on an enriching Master's journey at THWS, delving deep into Information Systems, combining theoretical insights with practical training to tackle real-world challenges with confidence.",
-    "tasks": []
+    "tasks": [
+      "Theoretical computer science",
+      "Software architecture",
+      "Distributed systems",
+      "Social and leadership skills",
+      "Information management",
+      "IT Consulting",
+      "Embedded Systems",
+      "Agile Enterprise",
+      "Web Programming",
+      "Business Intelligence and Reporting"
+    ]
   },
   {
     "image_name": "jmuLogo",
@@ -23,14 +34,27 @@
     "type": "Graduation",
     "location": "Würzburg, Germany",
     "description": "Built a solid foundation in Information Systems during my Bachelor's studies at JMU, laying the groundwork for my academic and professional pursuits in the dynamic field of technology.",
-    "tasks": []
+    "tasks": [
+      "Data Modelling",
+      "Algorithms and Data Structure",
+      "Database Basics",
+      "General Management",
+      "Forward and Reverse Business Engineering",
+      "Software Architecture",
+      "Buiness Process Management",
+      "Integrated Business Processes",
+      "Accounting",
+      "Investment and Finance",
+      "Economics",
+      "Business Economics"
+    ]
   },
   {
     "image_name": "rgwLogo",
     "experience_type": "EDUCATION",
     "start_month": "SEP",
     "start_year": 2011,
-    "end_month": "JUNE",
+    "end_month": "JUN",
     "end_year": 2014,
     "title": "High School Diploma",
     "type": "Graduation",
