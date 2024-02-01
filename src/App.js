@@ -4,7 +4,7 @@ import ExperienceSection from "./pages/landing/ExperienceSection";
 import CertificationSection from "./pages/landing/CertificationSection";
 import ProjectSection from "./pages/landing/ProjectSection";
 import EducationSection from "./pages/landing/EducationSection";
-
+import Footer from "./components/Footer";
 import NavbarDefault from "./components/Navbar";
 
 function App() {
@@ -20,7 +20,9 @@ function App() {
         <CertificationSection />
         <ProjectSection />
       </body>
-      <footer>Footer</footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
