@@ -8,9 +8,9 @@ import {
 
 const ProjectSection = () => {
   return (
-    <section className="mx-auto w-4/5 py-20">
+    <section className="snap-start py-8 lg:py-20 mx-auto w-full lg:w-4/5">
       <SectionHeadline title="Projects" textColor="primary" />
-      <div className="max-w-screen-lg mx-auto flex flex-col gap-6">
+      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto px-6 lg:px-0">
         {projectData.map((project) => (
           <ProjectCard
             title={project.title}
