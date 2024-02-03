@@ -9,21 +9,23 @@ import NavbarDefault from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      <header>
-        <NavbarDefault />
-      </header>
-      <body className="flex flex-col mx-auto">
-        <HeroSection />
-        <ExperienceSection />
-        <EducationSection />
-        <CertificationSection />
-        <ProjectSection />
+    <html>
+      <body>
+        <header>
+          <NavbarDefault />
+        </header>
+        <div className="h-screen flex flex-col snap-y snap-mandatory overflow-scroll">
+          <HeroSection />
+          <ExperienceSection />
+          <EducationSection />
+          <CertificationSection />
+          <ProjectSection />
+          <footer className="snap-end">
+            <Footer />
+          </footer>
+        </div>
       </body>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    </html>
   );
 }
 
