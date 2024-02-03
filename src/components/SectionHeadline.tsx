@@ -11,7 +11,7 @@ class SectionHeadline extends Component<Props> {
     return (
       <Typography
         placeholder={undefined}
-        className={`max-w-screen-lg mx-auto pb-4 font-bold text-${this.props.textColor}`}
+        className={`px-6 lg:py-0 max-w-screen-lg mx-auto pb-6 font-bold text-${this.props.textColor}`}
         variant="h2"
       >
         {this.props.title}
