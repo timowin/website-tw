@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { ExperienceTypeEnum, MonthEnum } from "../Enums";
+import { DatePeriodTypeEnum, ExperienceTypeEnum, MonthEnum } from "../Enums";
 import ImageWithLocation from "./ImageWithLocation";
 import {
   BriefcaseIcon,
@@ -57,39 +57,53 @@ export default class ExperienceCard extends Component<Props> {
 
   render() {
     return (
-      <div className="w-full group bg-white rounded-lg p-4 flex flex-row gap-8 hover:scale-105 duration-300">
-        <div className="flex flex-col gap-4 content-between basis-3/4">
-          <div className="basis-2/3">
-            <div className="flex flex-col basis-2/3">
-              <span className="font-black uppercase text-xl text-secondary duration-300">
-                {this.props.title}
-              </span>
-              <DatePeriod
-                start_month={this.props.start_month}
-                start_year={this.props.start_year}
-                end_month={this.props.end_month}
-                end_year={this.props.end_year}
-                date={this.props.date}
-              />
-            </div>
-          </div>
-          <div className="flex flex-col gap-2">
-            {this.props.description}
-            {this.renderTasks()}
-          </div>
-          <div className="flex items-end">
-            <div className="relative flex flex-row gap-2 select-none items-center whitespace-nowrap rounded-lg group-hover:bg-gradient-to-r group-hover:from-blue800 group-hover:to-blue-900 bg-blue-900 py-1.5 px-3 font-sans text-xs font-bold uppercase text-white">
-              <span className="">{this.props.type}</span>
-              <div>{this.renderExperienceTypeIcon()}</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="basis-1/4 m-auto">
-          <ImageWithLocation
-            image_name={this.props.image_name}
-            location={this.props.location}
+      <div className="flex flex-row snap-start">
+        <div className="w-1/5">
+          <DatePeriod
+            end_month={this.props.end_month}
+            end_year={this.props.end_year}
+            type={DatePeriodTypeEnum.TIMELINE}
           />
+          <div className="w-0 mx-auto border-l-2 border-white h-full" />
+        </div>
+        <div className="my-6 w-4/5 group bg-white rounded-lg p-4 flex flex-col lg:flex-row gap-8 hover:scale-105 duration-300">
+          <div className="flex flex-col gap-4 content-between basis-3/4">
+            {/** Job title and date */}
+            <div className="basis-2/3">
+              <div className="flex flex-col basis-2/3">
+                <span className="font-black uppercase text-xl text-secondary duration-300">
+                  {this.props.title}
+                </span>
+                <DatePeriod
+                  start_month={this.props.start_month}
+                  start_year={this.props.start_year}
+                  end_month={this.props.end_month}
+                  end_year={this.props.end_year}
+                  date={this.props.date}
+                  type={DatePeriodTypeEnum.SUBHEADING}
+                />
+              </div>
+            </div>
+            {/** Job description and tasks */}
+            <div className="flex flex-col gap-2">
+              {this.props.description}
+              <div className="hidden lg:block">{this.renderTasks()}</div>
+            </div>
+            {/** Experience Type Icon */}
+            <div className="hidden lg:flex items-end">
+              <div className="relative flex flex-row gap-2 select-none items-center whitespace-nowrap rounded-lg group-hover:bg-gradient-to-r group-hover:from-blue800 group-hover:to-blue-900 bg-blue-900 py-1.5 px-3 font-sans text-xs font-bold uppercase text-white">
+                <span className="">{this.props.type}</span>
+                <div>{this.renderExperienceTypeIcon()}</div>
+              </div>
+            </div>
+          </div>
+          {/** Image with Location */}
+          <div className="basis-1/4 m-auto w-4/5 lg:w-full">
+            <ImageWithLocation
+              image_name={this.props.image_name}
+              location={this.props.location}
+            />
+          </div>
         </div>
       </div>
     );
