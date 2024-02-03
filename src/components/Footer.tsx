@@ -11,12 +11,16 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="bg-primary py-12">
-        <div className="mx-auto text-white max-w-screen-lg flex flex-row justify-between px-12">
+        <div className="mx-auto text-white gap-12 max-w-screen-lg flex flex-col lg:flex-row justify-between px-12">
+          {/** Social Links */}
           <div className="flex flex-col gap-3">
-            <Typography className="uppercase font-bold" placeholder={undefined}>
+            <Typography
+              className="place-self-center uppercase font-bold"
+              placeholder={undefined}
+            >
               Connect with me
             </Typography>
-            <div className="flex flex-row justify-between px-2">
+            <div className="flex flex-row justify-center gap-6">
               <a
                 className="group"
                 href="https://github.com/timowin"
@@ -25,7 +29,7 @@ export default class Footer extends Component {
               >
                 <FontAwesomeIcon
                   className="group-hover:scale-150"
-                  size="xl"
+                  size="lg"
                   icon={faGithub}
                 />
               </a>
@@ -37,7 +41,7 @@ export default class Footer extends Component {
               >
                 <FontAwesomeIcon
                   className="group-hover:scale-125"
-                  size="xl"
+                  size="lg"
                   icon={faLinkedin}
                 />
               </a>
@@ -49,12 +53,20 @@ export default class Footer extends Component {
               >
                 <FontAwesomeIcon
                   className="group-hover:scale-125"
-                  size="xl"
+                  size="lg"
                   icon={faXing}
                 />
               </a>
             </div>
+            <div className="flex justify-center text-sm ">
+              +49 176 808 555 91
+            </div>
+            <div className="flex justify-center text-sm ">
+              info@timowinkler.de
+            </div>
           </div>
+
+          {/** Legals */}
           <div className="flex flex-col gap-3">
             <Typography
               className="place-self-center uppercase font-bold"
@@ -81,8 +93,12 @@ export default class Footer extends Component {
               Legal Notice
             </Typography>
           </div>
+          {/** Navigation */}
           <div className="flex flex-col gap-3">
-            <Typography className="uppercase font-bold" placeholder={undefined}>
+            <Typography
+              className="place-self-center uppercase font-bold"
+              placeholder={undefined}
+            >
               Navigation
             </Typography>
             <Typography
