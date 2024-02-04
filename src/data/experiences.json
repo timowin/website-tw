@@ -8,6 +8,7 @@
     "type": "Full time",
     "location": "Frankfurt, Germany",
     "description": "I am currently employed as a software developer and IT consultant at msg for banking AG, where I contribute to developing and optimizing software solutions for the banking sector.",
+    "short_description": "I am currently employed as a software developer and IT consultant at msg for banking AG.",
     "tasks": [
       "Collaborate with cross-functional teams to design, develop, and implement software solutions tailored to meet the specific needs of the banking industry",
       "Actively participate in the entire software development life cycle, from concept and design to testing, deployment, and maintenance",
@@ -25,6 +26,7 @@
     "type": "Masterand",
     "location": "Weissach, Germany",
     "description": "In the final phase of my academic journey, I partnered with Porsche AG to explore human anticipation behavior, contributing to the advancement of AI-based object recognition methods.",
+    "short_description": "For my master thesis I worked at Porsche AG to research in the field of autonomous driving.",
     "tasks": [
       "Masterand in the field of autonomous and highly automated driving",
       "Title of my Masterthesis: Statistical analysis of human anticipation ability at night-time vehicle detection for further development of object recognition methods."
@@ -41,6 +43,7 @@
     "type": "Trainee",
     "location": "Bietigheim-Bissingen, Germany",
     "description": "During my internship at Porsche Engineering I worked on different topics to improve and assure the software quality in the automotive industry.",
+    "short_description": "As a intern at Porsche Engineering I worked on Software Quality and Process Management.",
     "tasks": [
       "Support of the software quality managers in a customer project to implement ASPICE Level 2 processes",
       "Work with the agile process team during piloting of machine learning software processes"
@@ -57,6 +60,7 @@
     "type": "Working Student",
     "location": "Würzburg, Germany",
     "description": "As a full-stack developer, I worked in the design, development, and deployment of end-to-end solutions. Leveraging a comprehensive skill set, I seamlessly bridged the gap between front-end and back-end development, ensuring the creation and improvement of robust and user-friendly applications.",
+    "short_description": "As a Full-Stack-Developer, I worked in the design, development, and deployment of end-to-end solutions.",
     "tasks": [
       "Full-Stack development of cloud-based web applications with Ruby on Rails, hosted on AWS Servers",
       "Conception and development of ideas to simplify processes with the help of modern software solutions",
@@ -74,6 +78,7 @@
     "type": "Working Student",
     "location": "Würzburg, Germany",
     "description": "As a diligent working student at I played a pivotal role in enhancing data integrity by supporting the migration from a heterogeneous, distributed MS Access-based database to a centralized MongoDB solution. My primary responsibility involved meticulously analyzing and mitigating duplicate data instances, ensuring data accuracy and consistency throughout the transition process while preserving vital information.",
+    "short_description": "At TeleAktiv, I contributed to migrate from a distributed MS Acess to a modern centralized MongoDB solution",
     "tasks": [
       "Finding duplicates based on approximative string matching",
       "Cocept and protoype a softarebased solution for duplicate elimination in Python"
@@ -90,6 +95,7 @@
     "type": "Bachelorand",
     "location": "Würzburg, Germany",
     "description": "Undertook an in-depth exploration during my bachelor studies to address the challenges of data quality within TeleAktiv. My research aimed to devise effective strategies to eliminate duplicates without compromising data integrity, providing valuable insights for optimizing data management practices in modern database environments.",
+    "short_description": "During my bachelor thesis I researched in the field of approximative string matching.",
     "tasks": [
       "Title of my Bachelorthesis: Comparison of the applicability of different algorithms for approximate string matching in the use case of company address data."
     ]
