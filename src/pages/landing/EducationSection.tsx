@@ -8,9 +8,9 @@ import {
 
 const EducationSection = () => {
   return (
-    <section className="snap-start py-8 lg:py-20 mx-auto w-full lg:w-4/5">
-      <SectionHeadline title="Educational Path" textColor="primary" />
-      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto px-6 lg:px-0">
+    <section className="snap-start py-8 h-screen lg:py-20 mx-auto w-full lg:w-4/5">
+      <SectionHeadline title="Education" textColor="primary" />
+      <div className="flex flex-row gap-6 max-w-screen-lg mx-auto px-6 lg:px-0">
         {educationData.map((education) => (
           <EducationCard
             image_name={education.image_name}
