@@ -10,11 +10,10 @@ import NavbarDefault from "./components/Navbar";
 function App() {
   return (
     <html>
+      <head></head>
       <body>
-        <header>
+        <div className="bg-creme h-screen flex flex-col snap-y snap-mandatory overflow-scroll">
           <NavbarDefault />
-        </header>
-        <div className="h-screen flex flex-col snap-y snap-mandatory overflow-scroll">
           <HeroSection />
           <ExperienceSection />
           <EducationSection />
