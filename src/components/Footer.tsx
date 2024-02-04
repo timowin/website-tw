@@ -58,11 +58,11 @@ export default class Footer extends Component {
                 />
               </a>
             </div>
-            <div className="flex justify-center text-sm ">
-              +49 176 808 555 91
+            <div className="flex justify-center text-sm hover:font-bold">
+              <a href="tel:+4917680855591">+49 176 808 555 91</a>
             </div>
-            <div className="flex justify-center text-sm ">
-              info@timowinkler.de
+            <div className="flex justify-center text-sm hover:font-bold">
+              <a href="mailto:info@timowinkler.de">info@timowinkler.de</a>
             </div>
           </div>
 
