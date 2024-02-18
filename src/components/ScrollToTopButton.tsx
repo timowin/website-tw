@@ -3,7 +3,9 @@ import useScrollDirection from "../helperFunctions/useScrollDirection";
 import { ScrollDirectionEnum } from "../Enums";
 import { ArrowUpIcon } from "@heroicons/react/24/solid";
 
-function scrollToTop() {}
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,12 +20,12 @@ export default function ScrollToTopButton() {
     }
   }, [scrollDir]);
 
-  let dependentClass = isVisible ? "opacity-0" : "opacity-100";
+  let dependentClass = isVisible ? "hidden" : "block";
 
   return (
     <ArrowUpIcon
-      onClick={}
-      className={`transition duration-300 hover:scale-125 fixed bottom-0 right-0 text-white bg-primary p-2 mb-4 mr-4 h-12 border-2 border-white rounded-full ${dependentClass}`}
+      onClick={scrollToTop}
+      className={`transition duration-300 hover:cursor-pointer hover:scale-125 fixed bottom-0 right-0 text-white bg-primary p-2 mb-4 mr-4 h-10 border-2 border-white rounded-full ${dependentClass}`}
     />
   );
 }
