@@ -11,7 +11,7 @@ export default class Footer extends Component {
   render() {
     return (
       <div className="bg-primary py-12">
-        <div className="mx-auto text-white gap-12 max-w-screen-lg flex flex-col lg:flex-row justify-between px-12">
+        <div className="mx-auto text-white gap-12 max-w-screen-lg flex flex-col lg:flex-row justify-between">
           {/** Social Links */}
           <div className="flex flex-col gap-3">
             <Typography
