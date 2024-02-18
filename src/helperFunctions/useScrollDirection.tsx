@@ -2,17 +2,19 @@ import { useEffect, useState } from "react";
 import { ScrollDirectionEnum } from "../Enums";
 
 const useScrollDirection = () => {
-  const threshold = 10;
+  const minScrollDistanceThreshold = 50;
   const [scrollDir, setScrollDir] = useState(ScrollDirectionEnum.UP);
 
   useEffect(() => {
     // previous scroll Y position from window
     let previousScrollYPosition: number = window.scrollY;
 
-    // boolean that calculated if the user scrolled more than threshold
+    // boolean that calculates if the user scrolled more than threshold
     const scrolledMoreThanThreshold = (currentScrollYPosition: number) =>
-      Math.abs(currentScrollYPosition - previousScrollYPosition) > threshold;
+      Math.abs(currentScrollYPosition - previousScrollYPosition) >
+      minScrollDistanceThreshold;
 
+    // boolean that calculates if the user is scrolling Up
     const isScrollingUp = (currentScrollYPosition: number) =>
       currentScrollYPosition > previousScrollYPosition &&
       !(previousScrollYPosition > 0 && currentScrollYPosition === 0) &&
@@ -36,7 +38,6 @@ const useScrollDirection = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  console.log(scrollDir);
   return scrollDir;
 };
 
