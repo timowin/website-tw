@@ -21,7 +21,7 @@ function NavList() {
         className="p-1 font-medium uppercase font-bold"
       >
         <a
-          href="#"
+          href={"#aboutme"}
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           About me
@@ -35,10 +35,10 @@ function NavList() {
         className="p-1 font-medium uppercase font-bold"
       >
         <a
-          href="#"
+          href="#projects"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Services
+          Projects
         </a>
       </Typography>
       <Typography
@@ -49,10 +49,38 @@ function NavList() {
         className="p-1 font-medium uppercase font-bold"
       >
         <a
-          href="#"
+          href="#experience"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Projects
+          Experience
+        </a>
+      </Typography>
+      <Typography
+        placeholder={placeholder}
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium uppercase font-bold"
+      >
+        <a
+          href="#certifications"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
+          Certifications
+        </a>
+      </Typography>
+      <Typography
+        placeholder={placeholder}
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-medium uppercase font-bold"
+      >
+        <a
+          href="#education"
+          className="flex items-center hover:text-blue-500 transition-colors"
+        >
+          Education
         </a>
       </Typography>
       <Typography
@@ -73,6 +101,13 @@ function NavList() {
     </ul>
   );
 }
+
+const scrollToSection = (sectionId: string) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 export default function NavbarSimple() {
   const [openNav, setOpenNav] = React.useState(false);

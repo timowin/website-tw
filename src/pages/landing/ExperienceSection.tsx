@@ -14,12 +14,13 @@ const events = [
 
 const ExperienceSection = () => {
   return (
-    <section className="snap-start h-screen">
-      <div className="bg-primary mx-0 lg:mx-6 my-6 h-[calc(100vh-3rem)] rounded-lg py-6">
+    <section id="experience" className="snap-start">
+      <div className="bg-primary mx-0 lg:mx-6 my-6 rounded-lg py-6">
         <SectionHeadline title="Experience" textColor="white" />
-        <div className="relative flex flex-col gap-6 max-w-screen-lg mx-auto px-6 lg:px-0 lg:py-0 h-[calc(100vh-12rem)] overflow-y-auto snap-y snap-mandatory">
+        <div className="relative flex flex-col gap-6 max-w-screen-lg mx-auto px-6 lg:px-0 lg:py-0 ">
           {experienceData.map((experience) => (
             <ExperienceCard
+              key={experience.title}
               image_name={experience.image_name}
               experience_type={parseExperienceTypeEnum(
                 experience.experience_type
@@ -41,7 +42,6 @@ const ExperienceSection = () => {
             />
           ))}
         </div>
-        <div className="bg-gradient-to-t from-primary to-transparent absolute max-w-screen-lg -mt-32 h-32 mx-auto bot-0 sticky"></div>
       </div>
     </section>
   );

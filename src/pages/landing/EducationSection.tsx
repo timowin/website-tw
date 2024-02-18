@@ -10,9 +10,10 @@ const EducationSection = () => {
   return (
     <section className="snap-start py-8 h-screen lg:py-20 mx-auto w-full lg:w-4/5">
       <SectionHeadline title="Education" textColor="primary" />
-      <div className="flex flex-row gap-6 max-w-screen-lg mx-auto px-6 lg:px-0">
+      <div className="flex flex-col gap-6 max-w-screen-lg mx-auto px-6 lg:px-0">
         {educationData.map((education) => (
           <EducationCard
+            key={education.title}
             image_name={education.image_name}
             experience_type={parseExperienceTypeEnum(education.experience_type)}
             start_month={parseMonthEnum(education.start_month)}

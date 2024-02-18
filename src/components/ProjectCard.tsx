@@ -22,14 +22,20 @@ export default class ProjectCard extends Component<Props> {
       (a, b) => a[1] - b[1]
     );
 
-    return sortedTechnologies.map(([technologyValue, technologyType]) => (
-      <TechnologyBadge type={technologyType} value={technologyValue} />
-    ));
+    return sortedTechnologies.map(
+      ([technologyValue, technologyType], index) => (
+        <TechnologyBadge
+          key={technologyValue + index.toString}
+          type={technologyType}
+          value={technologyValue}
+        />
+      )
+    );
   }
 
   render() {
     return (
-      <div className="group bg-white w-full rounded-lg p-4 grid grid-cols flex-grow hover:scale-105 duration-300 shadow-lg">
+      <div className="group bg-white w-1/4 rounded-lg p-4 grid grid-cols flex-grow hover:scale-105 duration-300 shadow-lg">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">
             <span className="font-black uppercase text-xl text-secondary duration-300">

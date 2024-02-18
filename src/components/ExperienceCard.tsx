@@ -69,8 +69,9 @@ export default class ExperienceCard extends Component<Props> {
         </div>
         <div className="my-6 w-3/4 group bg-white rounded-lg p-4 flex flex-col gap-8">
           {/** Job title and date */}
+
           <div className="flex flex-col w-full">
-            <span className="font-black uppercase text-xl text-secondary duration-300">
+            <span className="font-black uppercase text-xl text-secondary">
               {this.props.title}
             </span>
             <DatePeriod
