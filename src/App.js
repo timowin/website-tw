@@ -10,14 +10,14 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
-    <div className="bg-creme flex flex-col">
+    <div className="bg-gray flex flex-col">
       <ScrollToTopButton />
       <NavbarDefault />
       <HeroSection />
-      <ProjectSection />
       <CertificationSection />
-      <EducationSection />
+      <ProjectSection />
       <ExperienceSection />
+      <EducationSection />
       <footer className="snap-end">
         <Footer />
       </footer>
