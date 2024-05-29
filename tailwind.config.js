@@ -11,6 +11,7 @@ module.exports = withMT({
         creme: "#fafafc",
         primary: "#092635",
         secondary: "#1B4242",
+        gray: "#E0E0E0",
       },
     },
   },
