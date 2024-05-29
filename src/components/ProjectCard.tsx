@@ -1,6 +1,6 @@
 import { Component } from "react";
 import TechnologyBadge from "./TechnologyBadge";
-import { DatePeriodTypeEnum, MonthEnum, TechnologyTypeEnum } from "../Enums";
+import { MonthEnum, TechnologyTypeEnum } from "../Enums";
 import DatePeriod from "./DatePeriod";
 
 // Defines all properties
@@ -46,7 +46,6 @@ export default class ProjectCard extends Component<Props> {
               start_year={this.props.start_year}
               end_month={this.props.end_month}
               end_year={this.props.end_year}
-              type={DatePeriodTypeEnum.SUBHEADING}
             />
           </div>
           <div>{this.props.short_description}</div>

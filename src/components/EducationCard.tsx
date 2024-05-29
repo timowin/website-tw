@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { DatePeriodTypeEnum, ExperienceTypeEnum, MonthEnum } from "../Enums";
+import { ExperienceTypeEnum, MonthEnum } from "../Enums";
 import ImageWithLocation from "./ImageWithLocation";
 import {
   BriefcaseIcon,
@@ -60,7 +60,6 @@ export default class EducationCard extends Component<Props> {
                 end_month={this.props.end_month}
                 end_year={this.props.end_year}
                 date={this.props.date}
-                type={DatePeriodTypeEnum.SUBHEADING}
               />
             </div>
           </div>

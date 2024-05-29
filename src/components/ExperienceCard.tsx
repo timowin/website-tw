@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { DatePeriodTypeEnum, ExperienceTypeEnum, MonthEnum } from "../Enums";
+import { ExperienceTypeEnum, MonthEnum } from "../Enums";
 import ImageWithLocation from "./ImageWithLocation";
 import {
   BriefcaseIcon,
@@ -59,15 +59,7 @@ export default class ExperienceCard extends Component<Props> {
   render() {
     return (
       <div className="flex flex-row snap-start mr-4">
-        <div className="w-1/4">
-          <DatePeriod
-            end_month={this.props.end_month}
-            end_year={this.props.end_year}
-            type={DatePeriodTypeEnum.TIMELINE}
-          />
-          <div className="w-0 mx-auto border-l-2 border-white h-full" />
-        </div>
-        <div className="my-6 w-3/4 group bg-white rounded-lg p-4 flex flex-col gap-8">
+        <div className="my-6 w-full group bg-white rounded-lg p-4 flex flex-col gap-8">
           {/** Job title and date */}
 
           <div className="flex flex-col w-full">
@@ -80,7 +72,6 @@ export default class ExperienceCard extends Component<Props> {
               end_month={this.props.end_month}
               end_year={this.props.end_year}
               date={this.props.date}
-              type={DatePeriodTypeEnum.SUBHEADING}
             />
           </div>
           <div className="flex flex-row gap-6">

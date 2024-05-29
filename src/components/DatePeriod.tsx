@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { DatePeriodTypeEnum, MonthEnum } from "../Enums";
+import { MonthEnum } from "../Enums";
 import { capitalizeToLowercase } from "../helperFunctions/stringManipulation";
 import { Typography } from "@material-tailwind/react";
 
@@ -9,19 +9,9 @@ type Props = {
   end_month?: MonthEnum | null;
   end_year?: number | null;
   date?: string | null;
-  type: DatePeriodTypeEnum;
 };
 
 export default class DatePeriod extends Component<Props> {
-  getDateStyle() {
-    switch (this.props.type) {
-      case DatePeriodTypeEnum.SUBHEADING:
-        return "text-gray-600 text-sm group-hover:text-secondary";
-      case DatePeriodTypeEnum.TIMELINE:
-        return "uppercase text-white text-xl font-bold py-4 my-2 text-center bg-primary sticky top-0";
-    }
-  }
-
   getDateString(): string {
     // if date is given, just return the data as string
     if (this.props.date) {
@@ -61,7 +51,10 @@ export default class DatePeriod extends Component<Props> {
 
   render() {
     return (
-      <Typography placeholder={undefined} className={this.getDateStyle()}>
+      <Typography
+        placeholder={undefined}
+        className="text-gray-600 text-sm group-hover:text-secondary"
+      >
         {this.getDateString()}
       </Typography>
     );
