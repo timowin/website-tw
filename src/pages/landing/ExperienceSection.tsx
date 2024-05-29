@@ -15,8 +15,8 @@ const events = [
 const ExperienceSection = () => {
   return (
     <section id="experience" className="snap-start">
-      <div className="bg-primary mx-0 lg:mx-6 my-6 rounded-lg py-6">
-        <SectionHeadline title="Experience" textColor="white" />
+      <div className="bg-primary py-20 my-6 rounded-0 lg:rounded-lg lg:mx-6">
+        <SectionHeadline title="Professional Background" textColor="white" />
         <div className="relative flex flex-col gap-6 max-w-screen-lg mx-auto px-6 lg:px-0 lg:py-0 ">
           {experienceData.map((experience) => (
             <ExperienceCard
