@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section
       id="aboutme"
-      className="h-screen max-w-screen-lg flex mx-auto px-6 lg:px-0"
+      className="my-40 py-20 max-w-screen-lg flex mx-auto px-6 lg:px-0"
     >
       <div className="flex flex-col-reverse -mt-40 lg:flex-row self-center">
         <div className="basis-2/3 grid content-center gap-4 pr-20">
