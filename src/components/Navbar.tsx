@@ -21,6 +21,7 @@ function NavList() {
         className="p-1 font-medium uppercase font-bold"
       >
         <a
+          onClick={() => scrollToSection("#aboutme")}
           href={"#aboutme"}
           className="flex items-center hover:text-blue-500 transition-colors"
         >
@@ -63,6 +64,7 @@ function NavList() {
         className="p-1 font-medium uppercase font-bold"
       >
         <a
+          onClick={() => scrollToSection("#certifications")}
           href="#certifications"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
@@ -77,7 +79,8 @@ function NavList() {
         className="p-1 font-medium uppercase font-bold"
       >
         <a
-          href="#education"
+          onClick={() => scrollToSection("#education")}
+          href={"#education"}
           className="flex items-center hover:text-blue-500 transition-colors"
         >
           Education
@@ -126,7 +129,7 @@ export default function NavbarSimple() {
   return (
     <Navbar
       placeholder={placeholder}
-      className="bg-creme max-w-screen-lg mx-auto px-0 shadow-none rounded-none snap-start"
+      className="bg-gray max-w-screen-lg border-0 mx-auto px-4 lg:px-0 shadow-none rounded-none snap-start"
     >
       <div className="flex items-center justify-between text-primary">
         <Typography

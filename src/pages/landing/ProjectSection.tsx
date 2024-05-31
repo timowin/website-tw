@@ -13,7 +13,7 @@ const ProjectSection = () => {
       className="snap-start py-8 lg:py-20 mx-auto w-full lg:w-4/5"
     >
       <SectionHeadline title="My Recent Projects" textColor="primary" />
-      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto px-6 lg:px-0">
+      <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto px-4 lg:px-0">
         {projectData.map((project) => (
           <ProjectCard
             key={project.title}

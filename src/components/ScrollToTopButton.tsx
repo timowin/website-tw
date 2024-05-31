@@ -18,11 +18,7 @@ export default function ScrollToTopButton() {
 
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY > minDistanceThreshold) {
-        setHasMinScrollHeight(true);
-      } else {
-        setHasMinScrollHeight(false);
-      }
+      setHasMinScrollHeight(window.scrollY > minDistanceThreshold);
     }
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -47,12 +43,12 @@ export default function ScrollToTopButton() {
     }
   }, [isScrollingUp, hasMinScrollHeight]);
 
-  let dependentClass = isVisible ? "block" : "hidden";
+  let dependentClass = isVisible ? "block opacity-100" : "hidden opacity-0";
 
   return (
     <ArrowUpIcon
       onClick={scrollToTop}
-      className={`transition duration-300 hover:cursor-pointer hover:scale-125 fixed bottom-0 right-0 z-50 text-white bg-primary p-2 mb-4 mr-4 h-10 border-2 border-white rounded-full ${dependentClass}`}
+      className={`transition duration-300 hover:cursor-pointer hover:scale-125 fixed bottom-0 right-0 z-50 text-white bg-primary p-2 mb-4 mr-4 h-12 border-2 border-white rounded-full ${dependentClass}`}
     />
   );
 }

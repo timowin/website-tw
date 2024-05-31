@@ -17,7 +17,7 @@ const ExperienceSection = () => {
     <section id="experience" className="snap-start">
       <div className="bg-primary py-20 my-6 rounded-0 lg:rounded-lg lg:mx-6">
         <SectionHeadline title="Professional Background" textColor="white" />
-        <div className="relative flex flex-col gap-6 max-w-screen-lg mx-auto px-6 lg:px-0 lg:py-0 ">
+        <div className="flex flex-col gap-6 max-w-screen-lg mx-auto px-4 lg:px-0 lg:py-0">
           {experienceData.map((experience) => (
             <ExperienceCard
               key={experience.title}

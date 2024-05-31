@@ -13,7 +13,7 @@ export default class CertificateCard extends Component<Props> {
   render() {
     const imageObjectName = this.props.image_name as keyof typeof imageObjects;
     return (
-      <div className="w-1/5 flex-grow group bg-white rounded-lg p-4 hover:scale-105 duration-300">
+      <div className="lg:w-1/5 flex-grow group bg-white shadow-md border-primary rounded-lg p-4 hover:scale-105 duration-300">
         <div className="flex flex-col">
           <span className="font-black uppercase text-xl text-secondary duration-300">
             {this.props.title}
@@ -27,7 +27,7 @@ export default class CertificateCard extends Component<Props> {
           <img
             src={imageObjects[imageObjectName]}
             alt="logo"
-            className="object-contain mx-auto w-full px-2 py-6"
+            className="object-contain w-2/3 mx-auto w-full px-2 py-6"
           />
         </div>
       </div>

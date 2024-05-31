@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Header from "./components/Header";
 import HeroSection from "./pages/landing/HeroSection";
 import ExperienceSection from "./pages/landing/ExperienceSection";
 import CertificationSection from "./pages/landing/CertificationSection";
@@ -8,14 +9,15 @@ import Footer from "./components/Footer";
 import NavbarDefault from "./components/Navbar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
+//TODO: Fix responsive design (some elements are too large)
 function App() {
   return (
-    <div className="bg-gray flex flex-col">
+    <div className="bg-white">
+      <Header />
       <ScrollToTopButton />
-      <NavbarDefault />
       <HeroSection />
-      <CertificationSection />
       <ProjectSection />
+      <CertificationSection />
       <ExperienceSection />
       <EducationSection />
       <footer className="snap-end">

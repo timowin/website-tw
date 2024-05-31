@@ -6,30 +6,33 @@ const HeroSection = () => {
   return (
     <section
       id="aboutme"
-      className="my-40 py-20 max-w-screen-lg flex mx-auto px-6 lg:px-0"
+      className="my-40 py-20 max-w-screen-lg flex mx-auto px-4 lg:px-0"
     >
       <div className="flex flex-col-reverse -mt-40 lg:flex-row self-center">
-        <div className="basis-2/3 grid content-center gap-4 pr-20">
+        <div className="basis-2/3 grid content-center gap-4 lg:pr-20">
           <p className="uppercase text-sm">Hi there, i'm</p>
           <div>
-            <p className="font-bold text-6xl text-secondary">TIMO</p>
-            <p className="font-bold text-6xl text-secondary">WINKLER</p>
-            <p className="font-bold text-sm text-primary uppercase">
+            <p className="font-bold text-6xl text-primary">TIMO</p>
+            <p className="font-bold text-6xl text-primary">WINKLER</p>
+            <p className="font-bold text-sm text-secondary uppercase">
               M. Sc. Information Systems | Software Developer
             </p>
           </div>
-          <p className="font-white">
-            Welcome to my digital space! I'm a professional Software Developer
-            on a journey of turning ideas into elegant and efficient software
-            solutions. With a love for clean code and a knack for
-            problem-solving, I bring creativity and precision to every project.
+          <p>
+            I am a professional Full-Stack Developer based in Germany,
+            passionate about clean code, modern solutions, and aesthetic
+            designs. I thrive on working with the latest technologies and best
+            practices across all aspects of software development, from front-end
+            and back-end development to provisioning and maintaining complex
+            cloud infrastructure. If you would like to learn more, please feel
+            free to contact me.
           </p>
           <Button
             className="w-40 bg-primary rounded-full"
             placeholder={undefined}
             variant="filled"
           >
-            Let's work together
+            Contact me
           </Button>
         </div>
         <div className="basis-1/3 my-auto">

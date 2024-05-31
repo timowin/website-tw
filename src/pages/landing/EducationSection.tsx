@@ -8,9 +8,12 @@ import {
 
 const EducationSection = () => {
   return (
-    <section className="snap-start py-8 h-screen lg:py-20 mx-auto w-full lg:w-4/5">
+    <section
+      id="eduction"
+      className="snap-start py-8 lg:py-20 mx-auto w-full lg:w-4/5"
+    >
       <SectionHeadline title="Educational Background" textColor="primary" />
-      <div className="flex flex-col gap-6 max-w-screen-lg mx-auto px-6 lg:px-0">
+      <div className="flex flex-col gap-6 max-w-screen-lg mx-auto px-4 lg:px-0">
         {educationData.map((education) => (
           <EducationCard
             key={education.title}

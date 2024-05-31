@@ -35,7 +35,7 @@ export default class ProjectCard extends Component<Props> {
 
   render() {
     return (
-      <div className="group bg-white w-1/4 rounded-lg p-4 grid grid-cols flex-grow hover:scale-105 duration-300 shadow-lg">
+      <div className="min-w-60 group bg-white w-1/4 rounded-lg p-4 grid grid-cols flex-grow hover:scale-105 duration-300 shadow-lg">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col">
             <span className="font-black uppercase text-xl text-secondary duration-300">
