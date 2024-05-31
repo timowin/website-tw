@@ -12,12 +12,12 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 //TODO: Fix responsive design (some elements are too large)
 function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-creme">
       <Header />
       <ScrollToTopButton />
       <HeroSection />
-      <ProjectSection />
       <CertificationSection />
+      <ProjectSection />
       <ExperienceSection />
       <EducationSection />
       <footer className="snap-end">

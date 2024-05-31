@@ -4,11 +4,8 @@ import timoimage from "../../images/timo_winkler.jpeg";
 
 const HeroSection = () => {
   return (
-    <section
-      id="aboutme"
-      className="my-40 py-20 max-w-screen-lg flex mx-auto px-4 lg:px-0"
-    >
-      <div className="flex flex-col-reverse -mt-40 lg:flex-row self-center">
+    <section id="aboutme" className="max-w-screen-lg flex mx-auto px-4 lg:px-0">
+      <div className="flex flex-col-reverse lg:flex-row self-center">
         <div className="basis-2/3 grid content-center gap-4 lg:pr-20">
           <p className="uppercase text-sm">Hi there, i'm</p>
           <div>
