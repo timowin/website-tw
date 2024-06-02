@@ -1,10 +1,10 @@
-import ProjectCard from "../../components/ProjectCard";
-import SectionHeadline from "../../components/SectionHeadline";
-import projectData from "../../data/projects.json";
+import ProjectCard from '../../components/ProjectCard'
+import SectionHeadline from '../../components/SectionHeadline'
+import projectData from '../../data/projects.json'
 import {
   parseMonthEnum,
   parseTechnologyTypeEnum,
-} from "../../helperFunctions/enumParsers";
+} from '../../helperFunctions/enumParsers'
 
 const ProjectSection = () => {
   return (
@@ -12,7 +12,7 @@ const ProjectSection = () => {
       id="projects"
       className="snap-start py-8 lg:py-20 mx-auto w-full lg:w-4/5"
     >
-      <SectionHeadline title="My Recent Projects" textColor="primary" />
+      <SectionHeadline title="Recent Projects" textColor="primary" />
       <div className="flex flex-wrap gap-6 max-w-screen-lg mx-auto px-4 lg:px-0">
         {projectData.map((project) => (
           <ProjectCard
@@ -31,6 +31,6 @@ const ProjectSection = () => {
         ))}
       </div>
     </section>
-  );
-};
-export default ProjectSection;
+  )
+}
+export default ProjectSection
